@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do Project</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="input-container">
+        <h2>My Tasks</h2>
+        <label for="input" hidden>Task description</label>
+        <textarea id="input" placeholder="What needs to get done?"></textarea>
+        <p id="inputError"></p>
+        <button type="submit" id="addBtn">Add Task</button>
+    </div>
+
+    <p id="emptyState">Your task list is empty. Add a task to get started.</p>
+
+    <div class="display" style="display: none;">
+
+        <div class="countDisplay">
+            <p id="taskCount"></p>
+            <p id="completedTask"></p>
+            <p id="remainingTask"></p>
+        </div>
+
+        <section>
+            <h2>All</h2>
+            <div id="allTasks"></div>
+        </section>
+        <section>
+            <h2>Active</h2>
+            <div id="activeTasks"></div>
+        </section>
+        <section>
+            <h2>Completed</h2>
+            <div id="completedTasks"></div>
+        </section>
+
+    </div>
+
+
+    <script src="index.js"></script>
+</body>
+
+</html>
